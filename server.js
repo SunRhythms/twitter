@@ -1,9 +1,9 @@
-
-const express = require('');
+const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const hbs = require('express-handlebars');
+const hbs = require('hbs');
+const expressHbs = require('express-handlebars');
 
 const app = express();
 
@@ -14,9 +14,9 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var port = process.env.PORT || 3000;
-app.listen(port, (err) => {
+
+app.listen(3030, (err) => {
  if (err) console.log(err);
- console.log("Running on env port");
+ console.log("Running on 3030 port");
 
 });
