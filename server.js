@@ -4,7 +4,8 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const hbs = require('hbs');
 const expressHbs = require('express-handlebars');
-
+const path = require('path');
+const PORT = process.env.PORT ||5000;
 const app = express();
 
 app.engine('.hbs', expressHbs({ defaultLayout: 'layout', extname: '.hbs' }));

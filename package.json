@@ -1,6 +1,7 @@
 {
   "name": "twittut",
   "version": "1.0.0",
+  "engines": {"node":"9.6.1"},
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +14,7 @@
   "keywords": [
     "twitter",
     "fiverr",
-    "tutorial",
+    "clone",
     "udemy"
   ],
   "author": "SunRhythms",
